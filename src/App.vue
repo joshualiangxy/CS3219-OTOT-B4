@@ -21,9 +21,12 @@
 
 <script>
 import axios from 'axios';
+import config from './conf';
 import Header from './components/Header.vue';
 import Notes from './components/Notes.vue';
 import AddNoteForm from './components/AddNoteForm.vue';
+
+const { baseURL } = config();
 
 export default {
   name: 'App',
@@ -34,7 +37,7 @@ export default {
   },
   data() {
     return {
-      axiosInstance: axios.create({ baseURL: 'https://notes-app-qjkfjkawhq-as.a.run.app/notes' }),
+      axiosInstance: axios.create({ baseURL }),
       addNoteError: '',
       deleteNoteError: '',
       notes: [],
