@@ -98,10 +98,8 @@ export default {
         return;
       this.notes = response.data;
     } catch (err) {
-      console.log(err);
+      console.error(err);
     }
-
-    console.log(this.notes);
   }
 };
 </script>
