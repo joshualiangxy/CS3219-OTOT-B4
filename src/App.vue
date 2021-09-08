@@ -37,7 +37,7 @@ export default {
   },
   data() {
     return {
-      axiosInstance: axios.create({ baseURL }),
+      axiosInstance: axios.create({ baseURL: baseURL ?? 'https://notes-app-qjkfjkawhq-as.a.run.app/notes' }),
       addNoteError: '',
       deleteNoteError: '',
       notes: [],
