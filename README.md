@@ -1,4 +1,13 @@
-# cs3219-otot-b4
+## Configurations
+1. Run the following command to ensure you are on the correct version of node. Ensure you have node version manager installed.
+```bash
+$ nvm use
+```
+2. Add a `.env` file at the root of the project directory.
+3. Within the `.env` file, enter the environment variables for
+```bash
+VUE_APP_API_BASE_URL # The url to your backend ie. http://localhost:3000/notes
+```
 
 ## Project setup
 ```
@@ -19,6 +28,3 @@ npm run build
 ```
 npm run lint
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
